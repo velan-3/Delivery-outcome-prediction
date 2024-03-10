@@ -1,0 +1,253 @@
+@font-face {
+  font-family: filson;
+  src: url(font/Filson.ttf);
+}
+
+body {
+  font-family: filson;
+  background-color: #F5EFF1;
+  margin: 0;
+}
+
+nav {
+  height: 10vh;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  background: rgb(255, 113, 113, 0.1);
+}
+
+nav .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-left: 20px;
+}
+
+nav .nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  margin-right: 50px;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: #3A3967;
+  transition: .3s;
+}
+
+.nav-link a:hover {
+  color: #FF7171;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #FF7171;
+}
+
+.content {
+  height: 90vh;
+  display: flex;
+}
+
+.left {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left img {
+  height: 600px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  justify-content: center;
+}
+
+.right h1 {
+  text-align: left;
+  font-size: 36px;
+  margin-right: 100px;
+  margin-bottom: 0;
+  color: #FF7171;
+  font-weight: 500;
+}
+
+.right p {
+  text-align: justify;
+  font-size: 16px;
+  margin-right: 100px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: #3A3967;
+}
+
+.predict-btn {
+  font-family: filson;
+  width: 200px;
+  margin-top: 20px;
+  background-color: #FF7171;
+  border: transparent;
+  border-radius: 15px;
+  font-size: 18px;
+  font-stretch: expanded;
+  padding: 10px 0px;
+  color: #F5EFF1;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  transition: .3s;
+  letter-spacing: 2px;
+}
+
+.predict-btn:hover {
+  box-shadow: 0 0 10px #3a396734;
+}
+
+.form-container {
+  display: flex;
+  height: 90vh;
+  margin: 0 50px;
+}
+
+.main-form {
+  flex-basis: 50%;
+}
+
+
+
+.heading {
+  color: #FF7171;
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.form {
+  margin-top: 30px;
+}
+
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.input-box label {
+  color: #3A3967;
+}
+
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 650px;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 0 15px;
+  font-family: filson;
+}
+
+.input-box input:focus {
+  box-shadow: 0 0 0 2px #FF7171;
+}
+
+.form .radio-box {
+  margin-top: 20px;
+}
+
+.radio-box h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.form :where(.radio-option, .radio) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+
+.form .radio {
+  column-gap: 5px;
+}
+
+.radio input {
+  accent-color: rgb(137, 106, 251);
+}
+
+.form :where(.radio input, .radio label) {
+  cursor: pointer;
+}
+
+.radio label {
+  color: #3A3967;
+}
+
+.form button {
+  height: 50px;
+  width: 680px;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 30px;
+  border: 2.5px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #FF7171;
+  font-family: filson;
+  border-radius: 15px;
+  letter-spacing: 2PX;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form button:hover {
+  border: 2.5px solid #FF7171;
+  background: transparent;
+  color: #FF7171;
+}
+
+footer {
+  height: 10vh;
+  background: rgb(255, 113, 113, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #3A3967;
+  padding: 0 50px;
+}
+
+.foot-nav {
+  display: flex;
+  gap: 50px;
+}
+
+.prediction {
+  flex-basis: 50%;
+  background: rgb(255, 113, 113, 0.1);
+  border-radius: 30px;
+  margin: 50px;
+  border: 3px dashed #FF7171;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
